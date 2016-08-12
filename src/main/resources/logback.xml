@@ -15,11 +15,11 @@
 		<appender-ref ref="STDOUT" />
 	</logger>
 	
-	<logger name="com.gome" level="debug" additivity="false">
+	<logger name="com.gome" level="info" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
 	
-	<root level="debug">
+	<root level="info">
 		<appender-ref ref="STDOUT" />
 	</root>
 

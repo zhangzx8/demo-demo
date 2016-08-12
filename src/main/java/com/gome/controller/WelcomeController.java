@@ -1,6 +1,10 @@
 package com.gome.controller;
 
+import java.util.HashMap;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.gome.service.HelloWorldService;
+import com.gome.util.VelocityUtil;
 
 @Controller
 public class WelcomeController {
@@ -50,5 +55,7 @@ public class WelcomeController {
 		return model;
 
 	}
+	
+
 
 }
