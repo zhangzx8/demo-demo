@@ -10,7 +10,7 @@ public class VelocityDemo {
 
 	public static void main(String[] args) {
 		Map<String,Object> map = new HashMap<String,Object>();
-		map.put("name", "xioawang");
+		map.put("name", "小王");
 		String path = "template/hello.vm";
 		String path2 = "E:\\zhangzhixiang-ds\\workspace\\demo-demo\\src\\main\\webapp";
 		String path3 = "\\template\\hello2.vm";
