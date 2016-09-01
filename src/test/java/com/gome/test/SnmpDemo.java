@@ -3,6 +3,7 @@ package com.gome.test;
 import java.io.IOException;
 import java.util.Vector;
 
+import org.junit.runner.notification.RunListener.ThreadSafe;
 import org.snmp4j.PDU;
 import org.snmp4j.ScopedPDU;
 import org.snmp4j.Snmp;
@@ -25,6 +26,7 @@ import org.snmp4j.smi.OctetString;
 import org.snmp4j.smi.VariableBinding;
 import org.snmp4j.transport.DefaultUdpTransportMapping;
 
+@ThreadSafe
 public class SnmpDemo {
 
 	public static void main(String[] args) throws IOException {
