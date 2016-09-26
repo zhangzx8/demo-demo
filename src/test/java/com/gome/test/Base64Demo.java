@@ -31,6 +31,8 @@ public class Base64Demo {
 		         byte[] mimeBytes = stringBuilder.toString().getBytes("utf-8");
 		         String mimeEncodedString = Base64.getMimeEncoder().encodeToString(mimeBytes);
 		            System.out.println("Base64 Encoded String (MIME) :"+mimeEncodedString);
+		            
+		            System.out.println("Base64 Dncoded String (MIME):"+new String(Base64.getMimeDecoder().decode(mimeEncodedString),"utf-8"));
 		      }catch(UnsupportedEncodingException e){
 		         System.out.println("Error :"+e.getMessage());
 		      }
